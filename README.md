@@ -3,7 +3,7 @@ Proof of concept Clingo meta programming implementation of paraconsistent AFT se
 
 ## Description
 This repository accompanies a work entitled Paraconsistent Semantics for Extended Fuzzy Logic Programs via Approximation Fixpoint Theory[^1].
-It contains meta programs for use with Clingo[^2], which encode the common semantics based on Approximation Fixpoint Theory for extended logic programs.
+It contains meta programs for use with [Clingo](https://potassco.org/clingo/), which encode the common semantics based on Approximation Fixpoint Theory for extended logic programs.
 
 Extended logic programs extend normal logic programs with classical negation—that is, they permit both default negation (describing the absence of a proof for the truth of an atom) and classical negation (describing the presence of a proof for the falsity of an atom)—in a way that permits a model to make both an atom and its classical negation true at the same time (i.e. for it to be paraconsistent).
 
@@ -29,4 +29,3 @@ The semantics are encoded as follows:
 (i.e. Kripke-Kleene, supported models as regular fixpoints, stable models as stable fixpoints, and well-founded)
 
 [^1]: TODO paper citation
-[^2]: Clingo
