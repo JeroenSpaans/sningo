@@ -13,6 +13,8 @@ As it stands, the meta progams in this repository are expected to be used with r
 2. Clingo represents classical negation in a logic program using minus (e.g. `-a`). These strongly negated literals are then treated as fresh atoms, and combined with an (implicit) integrity constraint (`:- a, -a`). This approach works when inconsistency is forbidden, but does not suffice for semantics that permit paraconsistency. Classical negation should therefore be encoded using the predicate `snot\1` instead (e.g. `snot(a)`).
 3. For the time being, the meta programs require explicit input about the negation relation. This means that the reified logic program should include a fact `symbolStrongNegationOf(snot(a),a).` for every strongly negated literal–positive literal pair in the original program.
 
+It remains future work to write an alternative grounder that takes care of these factors automatically.
+
 The file Example3.rlp provide an example of how an extended logic program (in this case, Example 3 from the paper[^1], listed in Example3.lp) can be correctly reified.
 
 ## How to use
