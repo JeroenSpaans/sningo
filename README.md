@@ -15,7 +15,7 @@ As it stands, the meta progams in this repository are expected to be used with r
 
 It remains future work to write an alternative grounder that takes care of these factors automatically.
 
-The file Example3.rlp provide an example of how an extended logic program (in this case, Example 3 from the paper[^1], listed in Example3.lp) can be correctly reified.
+The file Example/Example3.rlp provide an example of how an extended logic program (in this case, Example 3 from the paper[^1], listed in Example/Example3.lp) can be correctly reified.
 
 ## How to use
 1. Ensure Clingo is installed on your machine. See: [Clingo releases](https://github.com/potassco/clingo/releases)
